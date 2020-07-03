@@ -8,3 +8,14 @@ C:\Users\Dino\Desktop\TESTING\Learning_3\Proekt\Proekt\obj\Debug\Proekt.csproj.C
 C:\Users\Dino\Desktop\TESTING\Learning_3\Proekt\Proekt\obj\Debug\Proekt.exe
 C:\Users\Dino\Desktop\TESTING\Learning_3\Proekt\Proekt\obj\Debug\Proekt.pdb
 C:\Users\Dino\Desktop\TESTING\Learning_3\Proekt\Proekt\obj\Debug\Proekt.Form1.resources
+C:\Users\User\Precision-practice\Proekt\Proekt\bin\Debug\Proekt.exe.config
+C:\Users\User\Precision-practice\Proekt\Proekt\bin\Debug\Proekt.exe
+C:\Users\User\Precision-practice\Proekt\Proekt\bin\Debug\Proekt.pdb
+C:\Users\User\Precision-practice\Proekt\Proekt\obj\Debug\Proekt.csprojAssemblyReference.cache
+C:\Users\User\Precision-practice\Proekt\Proekt\obj\Debug\Proekt.Form1.resources
+C:\Users\User\Precision-practice\Proekt\Proekt\obj\Debug\Proekt.Form2.resources
+C:\Users\User\Precision-practice\Proekt\Proekt\obj\Debug\Proekt.Properties.Resources.resources
+C:\Users\User\Precision-practice\Proekt\Proekt\obj\Debug\Proekt.csproj.GenerateResource.cache
+C:\Users\User\Precision-practice\Proekt\Proekt\obj\Debug\Proekt.csproj.CoreCompileInputs.cache
+C:\Users\User\Precision-practice\Proekt\Proekt\obj\Debug\Proekt.exe
+C:\Users\User\Precision-practice\Proekt\Proekt\obj\Debug\Proekt.pdb

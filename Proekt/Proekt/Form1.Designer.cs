@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.startGame = new System.Windows.Forms.Button();
             this.comboLabel = new System.Windows.Forms.Label();
             this.countDownLabel = new System.Windows.Forms.Label();
@@ -40,8 +41,16 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.timerSpeedLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.titleLabel = new System.Windows.Forms.Label();
-            this.ruleLabel = new System.Windows.Forms.Label();
+            this.inGameQ1 = new System.Windows.Forms.PictureBox();
+            this.inGameQ2 = new System.Windows.Forms.PictureBox();
+            this.questsLable = new System.Windows.Forms.Label();
+            this.q1 = new System.Windows.Forms.Label();
+            this.q2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.inGameQ1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inGameQ2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // startGame
@@ -144,7 +153,7 @@
             this.timerSpeedLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timerSpeedLabel.ForeColor = System.Drawing.Color.Red;
             this.timerSpeedLabel.Name = "timerSpeedLabel";
-            this.timerSpeedLabel.Size = new System.Drawing.Size(153, 20);
+            this.timerSpeedLabel.Size = new System.Drawing.Size(151, 20);
             this.timerSpeedLabel.Text = "toolStripStatusLabel1";
             // 
             // titleLabel
@@ -158,39 +167,103 @@
             this.titleLabel.TabIndex = 8;
             this.titleLabel.Text = "Precision Practice";
             // 
-            // ruleLabel
+            // inGameQ1
             // 
-            this.ruleLabel.AutoSize = true;
-            this.ruleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ruleLabel.ForeColor = System.Drawing.Color.Red;
-            this.ruleLabel.Location = new System.Drawing.Point(12, 369);
-            this.ruleLabel.Name = "ruleLabel";
-            this.ruleLabel.Size = new System.Drawing.Size(615, 72);
-            this.ruleLabel.TabIndex = 9;
-            this.ruleLabel.Text = "Rules:\r\n-You have 3 lifes, everytime you misslick you lose a life, if you lose al" +
-    "l lifes you lose the game\r\n-If the timer reaches below 200ms without losing all " +
-    "your lifes, you win\r\n-Good luck\r\n";
+            this.inGameQ1.Image = ((System.Drawing.Image)(resources.GetObject("inGameQ1.Image")));
+            this.inGameQ1.InitialImage = ((System.Drawing.Image)(resources.GetObject("inGameQ1.InitialImage")));
+            this.inGameQ1.Location = new System.Drawing.Point(738, 9);
+            this.inGameQ1.Name = "inGameQ1";
+            this.inGameQ1.Size = new System.Drawing.Size(22, 25);
+            this.inGameQ1.TabIndex = 10;
+            this.inGameQ1.TabStop = false;
+            this.inGameQ1.Visible = false;
+            // 
+            // inGameQ2
+            // 
+            this.inGameQ2.Image = ((System.Drawing.Image)(resources.GetObject("inGameQ2.Image")));
+            this.inGameQ2.InitialImage = ((System.Drawing.Image)(resources.GetObject("inGameQ2.InitialImage")));
+            this.inGameQ2.Location = new System.Drawing.Point(766, 9);
+            this.inGameQ2.Name = "inGameQ2";
+            this.inGameQ2.Size = new System.Drawing.Size(22, 25);
+            this.inGameQ2.TabIndex = 11;
+            this.inGameQ2.TabStop = false;
+            this.inGameQ2.Visible = false;
+            // 
+            // questsLable
+            // 
+            this.questsLable.AutoSize = true;
+            this.questsLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.questsLable.ForeColor = System.Drawing.Color.DarkCyan;
+            this.questsLable.Location = new System.Drawing.Point(13, 350);
+            this.questsLable.Name = "questsLable";
+            this.questsLable.Size = new System.Drawing.Size(66, 20);
+            this.questsLable.TabIndex = 12;
+            this.questsLable.Text = "Quests";
+            // 
+            // q1
+            // 
+            this.q1.AutoSize = true;
+            this.q1.BackColor = System.Drawing.Color.DarkGray;
+            this.q1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q1.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.q1.Location = new System.Drawing.Point(12, 383);
+            this.q1.Name = "q1";
+            this.q1.Size = new System.Drawing.Size(51, 20);
+            this.q1.TabIndex = 13;
+            this.q1.Text = "label1";
+            // 
+            // q2
+            // 
+            this.q2.AutoSize = true;
+            this.q2.BackColor = System.Drawing.Color.DarkGray;
+            this.q2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.q2.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.q2.Location = new System.Drawing.Point(13, 411);
+            this.q2.Name = "q2";
+            this.q2.Size = new System.Drawing.Size(51, 20);
+            this.q2.TabIndex = 14;
+            this.q2.Text = "label2";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(738, 383);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 48);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.ruleLabel);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.q2);
+            this.Controls.Add(this.q1);
+            this.Controls.Add(this.questsLable);
+            this.Controls.Add(this.inGameQ2);
+            this.Controls.Add(this.inGameQ1);
             this.Controls.Add(this.titleLabel);
-            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.restartBtn);
             this.Controls.Add(this.livesLabel);
             this.Controls.Add(this.gameOverLabel);
             this.Controls.Add(this.countDownLabel);
             this.Controls.Add(this.comboLabel);
             this.Controls.Add(this.startGame);
+            this.Controls.Add(this.statusStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Precision Practice";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseClick);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.inGameQ1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inGameQ2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,7 +282,12 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel timerSpeedLabel;
         private System.Windows.Forms.Label titleLabel;
-        private System.Windows.Forms.Label ruleLabel;
+        private System.Windows.Forms.PictureBox inGameQ1;
+        private System.Windows.Forms.PictureBox inGameQ2;
+        private System.Windows.Forms.Label questsLable;
+        private System.Windows.Forms.Label q1;
+        private System.Windows.Forms.Label q2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
