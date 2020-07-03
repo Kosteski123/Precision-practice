@@ -51,17 +51,80 @@ namespace Proekt
 
         private void timerCountDown_Tick(object sender, EventArgs e)
         {
-            //TODO
+            countDownLabel.Visible = true;
+            flagStart--;
+            countDownLabel.Text = flagStart.ToString();
+            if (flagStart == 0)
+            {
+                countDownLabel.Text = "Get Ready!!!";
+            }
+            else if (flagStart == -1)
+            {
+                countDownLabel.Visible = false;
+                timerCountDown.Stop();
+                timerPlay.Start();
+            }
         }
 
         private void timerPlay_Tick(object sender, EventArgs e)
         {
-                //TODO
+            statusStrip1.Visible = true;
+            comboLabel.Visible = true;
+            livesLabel.Visible = true;
+            timerPlay.Interval = decrease;
+            timerSpeedLabel.Text = string.Format("Timer Speed: " + decrease + "ms");
+            if (decrease >= 1000)
+                decrease -= 50;
+            else if (decrease < 1000)
+                decrease -= 20;
+            timerPlay.Interval = decrease;
+            int y = r.Next(2 * Circles.radius, Height - (Circles.radius * 2));      //random loc
+            int x = r.Next(2 * Circles.radius, Width - (Circles.radius * 2));
+            Circles c = new Circles(new Point(x, y));
+            scene.addC(c);
+            comboLabel.Text = string.Format("Combo: " + scene.Combo);
+            if (scene.threeLives >= 0)
+            {
+                livesLabel.Text = string.Format("♥ x " + scene.threeLives);
+            }
+            else
+            {
+                //scene.removeAllC();
+                timerPlay.Stop();
+                this.BackColor = Color.DarkGray;
+                gameOverLabel.Enabled = true;
+                gameOverLabel.Visible = true;
+                gameOverLabel.Text = string.Format(lose + scene.flagMax);
+                restartBtn.Visible = true;
+                restartBtn.Enabled = true;
+                scene.removeAllC();
+                flag = 1;
+            }
+            if (timerPlay.Interval < 500)
+            {
+                scene.removeAllC();                             //*   treba dvapati da ja ima ovaa funkcija za da raboti
+                timerPlay.Stop();
+                this.BackColor = Color.DarkGray;
+                gameOverLabel.Enabled = true;
+                gameOverLabel.Visible = true;
+                gameOverLabel.Text = string.Format(win + scene.flagMax);
+                restartBtn.Visible = true;
+                restartBtn.Enabled = true;
+                scene.removeAllC();                              //*
+                flag = 1;
+            }
+            scene.removeC();
+            Invalidate(true);
         }
 
         private void Form1_MouseClick(object sender, MouseEventArgs e)
         {
-            //TODO
+            if (startGame.Visible == false && timerCountDown.Enabled == false && flag == 0)
+            {
+                scene.Click(e.X, e.Y);
+                scene.removeC();
+                timerPlay_Tick(null, null);
+            }
         }
 
         private void restartBtn_Click(object sender, EventArgs e)
