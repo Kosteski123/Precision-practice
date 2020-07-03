@@ -1,0 +1,10 @@
+C:\Users\Dino\Desktop\TESTING\Learning_3\Proekt\Proekt\bin\Debug\Proekt.exe.config
+C:\Users\Dino\Desktop\TESTING\Learning_3\Proekt\Proekt\bin\Debug\Proekt.exe
+C:\Users\Dino\Desktop\TESTING\Learning_3\Proekt\Proekt\bin\Debug\Proekt.pdb
+C:\Users\Dino\Desktop\TESTING\Learning_3\Proekt\Proekt\obj\Debug\Proekt.csprojAssemblyReference.cache
+C:\Users\Dino\Desktop\TESTING\Learning_3\Proekt\Proekt\obj\Debug\Proekt.Properties.Resources.resources
+C:\Users\Dino\Desktop\TESTING\Learning_3\Proekt\Proekt\obj\Debug\Proekt.csproj.GenerateResource.cache
+C:\Users\Dino\Desktop\TESTING\Learning_3\Proekt\Proekt\obj\Debug\Proekt.csproj.CoreCompileInputs.cache
+C:\Users\Dino\Desktop\TESTING\Learning_3\Proekt\Proekt\obj\Debug\Proekt.exe
+C:\Users\Dino\Desktop\TESTING\Learning_3\Proekt\Proekt\obj\Debug\Proekt.pdb
+C:\Users\Dino\Desktop\TESTING\Learning_3\Proekt\Proekt\obj\Debug\Proekt.Form1.resources
