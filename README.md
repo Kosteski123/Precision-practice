@@ -21,11 +21,11 @@ Ready, епа среќно читање!
 
 На почеток ќе има старт скрин каде ќе најдете:
 
-start game button
+- start game button
 
-list of quests with lable Quests
+- list of quests with lable Quests
 
-? button that opens a how to play window
+- ? button that opens a how to play window
 
 ## After pressing the Start game button
 
